@@ -1,0 +1,140 @@
+.page-project {
+	position: relative;
+	padding-top: 100px;
+	margin-bottom: 80px;
+}
+
+.page-project__col {
+	position: relative;
+}
+
+.page-project__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+}
+
+.page-project__item {
+	width: calc(100% / 2 - 40px);
+	margin: 0 20px;
+}
+
+.page-project__date {
+	font-size: 24px;
+	line-height: 1.2;
+	color: #a3a3a3;
+	padding-bottom: 12px;
+	font-weight: bold;
+}
+
+.page-project__title {
+	font-size: 72px;
+	line-height: 1.1;
+	padding-bottom: 30px;
+	font-weight: bold;
+}
+
+.page-project__title span {
+	display: inline-block;
+	color: #e74011;
+}
+
+.page-project__desc p {
+	font-size: 18px;
+	line-height: 1.35;
+	color: #292929;
+	font-family: Avenir;
+	font-weight: 500;
+}
+
+.page-project__item h5 {
+	font-size: 24px;
+	line-height: 1.2;
+	color: #292929;
+	padding-bottom: 16px;
+}
+
+.page-project__item ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-bottom: 14px;
+}
+
+.page-project__item ul li {
+	position: relative;
+	font-size: 16px;
+	color: #292929;
+	padding-left: 20px;
+	margin-bottom: 14px;
+	font-family: Avenir;
+	font-weight: 800;
+}
+
+.page-project__item ul li:after {
+	position: absolute;
+	content: '+';
+	left: 0px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.page-project__item ul li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.page-project__item p {
+	font-size: 18px;
+	line-height: 1.2;
+	font-family: Avenir;
+	font-weight: 500;
+}
+
+.page-project__aside {
+	position: absolute;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	bottom: 70px;
+	right: -81px;
+	font-size: 15px;
+	line-height: 1.2;
+	color: #292929;
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1430px) {
+
+.page-project__aside {
+	right: -40px;
+}
+
+}
+
+@media screen and (max-width: 1350px) {
+
+.page-project__aside {
+	display: none;
+}
+
+}
+

@@ -1,0 +1,75 @@
+@import 'responsive'
+
+.single
+	position: relative
+	padding-bottom: 120px
+	+media(md)
+		padding-bottom: 95px
+	+media(sm)
+		padding-bottom: 65px
+	&__tabs
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+	&__box
+		user-select: none
+		cursor: pointer
+		font-size: 24px
+		line-height: 1.2
+		color: #292929
+		border-bottom: 3px solid #fff
+		padding-bottom: 6px
+		margin-bottom: 13px
+		font-weight: bold
+		+media(sm)
+			font-size: 18px
+		&:not(:last-child)
+			margin-right: 48px
+			+media(sm)
+				margin-right: 28px
+		&--active
+			border-color: #e74011
+
+	.stages__number
+		display: none
+
+	.stages__subtitle
+		padding-left: 0px
+
+	&__elem
+		padding-top: 20px
+		padding-bottom: 33px
+		+media(sm)
+			padding-top: 0px
+			padding-bottom: 60px
+		p
+			font-size: 36px
+			line-height: 1.2
+			color: #292929
+			font-weight: bold
+			+media(md)
+				font-size: 30px
+			+media(sm)
+				font-size: 20px
+
+	&__item
+		padding-top: 28px
+		+media(md)
+			padding-top: 12px
+
+	&__aside
+		position: absolute
+		writing-mode: vertical-rl
+		transform: rotate(-180deg)
+		bottom: -110px
+		right: -80px
+		font-size: 15px
+		line-height: 1.2
+		font-family: roboto
+		font-weight: 700
+		+media(lg)
+			right: -50px
+		+media(lgm)
+			display: none
+			

@@ -1,0 +1,56 @@
+@import 'responsive'
+
+body
+	margin: 0
+	padding: 0
+	width: 100%
+	min-height: 100vh
+	overflow-x: hidden
+	color: #333333
+	background-color: #fff
+	font-size: 16px
+	line-height: 1.2
+	font-weight: normal
+	font-style: normal
+	font-family: "Montserrat"
+
+* 
+	box-sizing: border-box
+
+img
+	max-width: 100%
+	height: auto
+
+.container
+	max-width: 1230px
+	width: 100%
+	margin: 0 auto
+	padding: 0 15px
+	&--inner
+		max-width: 100%
+		padding: 0px
+
+	&--content
+		max-width: 920px
+
+	&--types
+		max-width: 1440px
+		padding: 0px
+
+	&--header
+		+media(sm)
+			padding: 0px
+
+.input
+	display: block
+	width: 100%
+	background-color: #c4c4c4
+	border: none
+	outline: none
+	padding: 10px
+	padding-bottom: 11px
+	&.form-fail
+		border-color: #b00
+
+	&.form-done
+		border-color: #90ee90

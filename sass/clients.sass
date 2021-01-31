@@ -1,0 +1,64 @@
+@import 'responsive'
+
+.clients
+	padding-bottom: 15px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		&--block
+			width: 480px
+			+media(lgxs)
+				width: 100%
+		&--gallery
+			width: calc(100% - 480px)
+			padding-top: 30px
+			+media(lgxs)
+				width: 100%
+				padding-top: 52px
+
+	&__title
+		font-size: 24px
+		line-height: 1.25
+		color: #292929
+		border-bottom: 1px solid #a3a3a3
+		padding-bottom: 8px
+		font-weight: bold
+		+media(sm)
+			font-size: 18px
+
+	&__text
+		padding-top: 30px
+		+media(sm)
+			padding-top: 25px
+		p
+			font-size: 36px
+			line-height: 1.2
+			color: #292929
+			font-weight: bold
+			+media(lgxs)
+				font-size: 30px
+			+media(sm)
+				font-size: 24px
+
+
+	&__holder
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		margin: 0 -20px
+
+	&__box
+		width: calc(100% / 3 - 40px)
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		margin: 0 20px
+		margin-bottom: 70px
+		+media(md)
+			margin-bottom: 50px
+		+media(xs)
+			width: calc(50% - 40px)
+		img
+			display: block

@@ -1,0 +1,147 @@
+.project {
+	position: relative;
+	z-index: 2;
+	margin-top: -120px;
+	padding-bottom: 75px;
+}
+
+.project__item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.project__item .project__box:first-child {
+	width: calc(100% - 410px);
+	margin-right: 40px;
+}
+
+.project__item .project__box:last-child {
+	width: 370px;
+}
+
+.project__item:nth-child(even) .project__box:first-child {
+	margin-right: 0px;
+	margin-left: 40px;
+}
+
+.project__item:nth-child(even) .project__box:last-child {
+	-webkit-box-ordinal-group: 0;
+	-webkit-order: -1;
+	-ms-flex-order: -1;
+	order: -1;
+}
+
+.project__box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	margin-bottom: 40px;
+	min-height: 375px;
+}
+
+.project__text {
+	padding: 0 20px;
+}
+
+.project__title {
+	font-size: 32px;
+	line-height: 1.2;
+	color: #fff;
+	padding-bottom: 7px;
+	font-weight: 800;
+}
+
+.project__desc {
+	padding-bottom: 20px;
+}
+
+.project__desc p {
+	font-size: 24px;
+	line-height: 1.25;
+	color: #fff;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 1050px) {
+
+.project {
+	padding-bottom: 40px;
+	margin-top: -80px;
+}
+
+}
+
+@media screen and (max-width: 960px) {
+
+.project__item .project__box:first-child {
+	width: calc(100% - 390px);
+	margin-right: 20px;
+}
+
+.project__item:nth-child(even) .project__box:first-child {
+	margin-left: 20px;
+}
+
+.project__box {
+	margin-bottom: 25px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.project {
+	padding-bottom: 22px;
+	margin-top: -40px;
+}
+
+.project__item .project__box:first-child {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.project__item .project__box:last-child {
+	width: 100%;
+}
+
+.project__item:nth-child(even) .project__box:first-child {
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.project__box {
+	min-height: 295px;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.project__title {
+	font-size: 24px;
+}
+
+.project__desc p {
+	font-size: 14px;
+}
+
+}
+

@@ -1,0 +1,20 @@
+@import 'responsive'
+
+.gallery
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		padding-bottom: 40px
+
+	&__item
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		padding-top: 40%
+		margin-bottom: 40px
+		&:nth-child(odd)
+			width: calc(100% - 410px)
+			margin-right: 40px
+
+		&:nth-child(even)
+			width: 370px

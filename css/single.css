@@ -1,0 +1,139 @@
+.single {
+	position: relative;
+	padding-bottom: 120px;
+}
+
+.single__tabs {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.single__box {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #292929;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 6px;
+	margin-bottom: 13px;
+	font-weight: bold;
+}
+
+.single__box:not(:last-child) {
+	margin-right: 48px;
+}
+
+.single__box--active {
+	border-color: #e74011;
+}
+
+.single .stages__number {
+	display: none;
+}
+
+.single .stages__subtitle {
+	padding-left: 0px;
+}
+
+.single__elem {
+	padding-top: 20px;
+	padding-bottom: 33px;
+}
+
+.single__elem p {
+	font-size: 36px;
+	line-height: 1.2;
+	color: #292929;
+	font-weight: bold;
+}
+
+.single__item {
+	padding-top: 28px;
+}
+
+.single__aside {
+	position: absolute;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	bottom: -110px;
+	right: -80px;
+	font-size: 15px;
+	line-height: 1.2;
+	font-family: roboto;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1430px) {
+
+.single__aside {
+	right: -50px;
+}
+
+}
+
+@media screen and (max-width: 1350px) {
+
+.single__aside {
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 960px) {
+
+.single {
+	padding-bottom: 95px;
+}
+
+.single__elem p {
+	font-size: 30px;
+}
+
+.single__item {
+	padding-top: 12px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.single {
+	padding-bottom: 65px;
+}
+
+.single__box {
+	font-size: 18px;
+}
+
+.single__box:not(:last-child) {
+	margin-right: 28px;
+}
+
+.single__elem {
+	padding-top: 0px;
+	padding-bottom: 60px;
+}
+
+.single__elem p {
+	font-size: 20px;
+}
+
+}
+

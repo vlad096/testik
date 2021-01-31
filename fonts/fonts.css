@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat.eot");
+    src: url("Montserrat.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat.woff") format("woff"),
+    url("Montserrat.woff2") format("woff2"),
+    url("Montserrat.ttf") format("truetype"),
+    url('Montserrat.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat-Bold.eot");
+    src: url("Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat-Bold.woff") format("woff"),
+    url("Montserrat-Bold.woff2") format("woff2"),
+    url("Montserrat-Bold.ttf") format("truetype"),
+    url('Montserrat-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat-ExtraBold.eot");
+    src: url("Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat-ExtraBold.woff") format("woff"),
+    url("Montserrat-ExtraBold.woff2") format("woff2"),
+    url("Montserrat-ExtraBold.ttf") format("truetype"),
+    url('MMontserrat-ExtraBold.svg') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("Avenir-Medium.eot");
+    src: url("Avenir-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Avenir-Medium.woff") format("woff"),
+    url("Avenir-Medium.woff2") format("woff2"),
+    url("Avenir-Medium.ttf") format("truetype"),
+    url('Avenir-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("Avenir-Heavy.eot");
+    src: url("Avenir-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("Avenir-Heavy.woff") format("woff"),
+    url("Avenir-Heavy.woff2") format("woff2"),
+    url("Avenir-Heavy.ttf") format("truetype"),
+    url('Avenir-Heavy.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("roboto-regular.eot");
+    src: url("roboto-regular.eot?#iefix") format("embedded-opentype"),
+    url("roboto-regular.woff") format("woff"),
+    url("roboto-regular.woff2") format("woff2"),
+    url("roboto-regular.ttf") format("truetype"),
+    url('roboto-regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("roboto-700.eot");
+    src: url("roboto-700.eot?#iefix") format("embedded-opentype"),
+    url("roboto-700.woff") format("woff"),
+    url("roboto-700.woff2") format("woff2"),
+    url("roboto-700.ttf") format("truetype"),
+    url('roboto-700.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}

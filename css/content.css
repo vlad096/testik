@@ -1,0 +1,46 @@
+.content {
+	padding-bottom: 80px;
+}
+
+.content__text {
+	padding-top: 30px;
+	padding-bottom: 38px;
+}
+
+.content__text p {
+	font-size: 36px;
+	line-height: 1.2;
+	color: #292929;
+	font-weight: bold;
+}
+
+.content__desc p {
+	font-size: 18px;
+	line-height: 1.35;
+	color: #292929;
+}
+
+@media screen and (max-width: 960px) {
+
+.content__text p {
+	font-size: 30px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.content {
+	padding-bottom: 65px;
+}
+
+.content__text {
+	padding: 24px 0;
+}
+
+.content__text p {
+	font-size: 20px;
+}
+
+}
+

@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	color: #333333;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Montserrat";
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1230px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container--inner {
+	max-width: 100%;
+	padding: 0px;
+}
+
+.container--content {
+	max-width: 920px;
+}
+
+.container--types {
+	max-width: 1440px;
+	padding: 0px;
+}
+
+.input {
+	display: block;
+	width: 100%;
+	background-color: #c4c4c4;
+	border: none;
+	outline: none;
+	padding: 10px;
+	padding-bottom: 11px;
+}
+
+.input.form-fail {
+	border-color: #b00;
+}
+
+.input.form-done {
+	border-color: #90ee90;
+}
+
+@media screen and (max-width: 780px) {
+
+.container--header {
+	padding: 0px;
+}
+
+}
+

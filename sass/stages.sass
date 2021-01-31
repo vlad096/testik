@@ -1,0 +1,268 @@
+@import 'responsive'
+
+.stages
+	padding-top: 90px
+	margin-bottom: 94px
+	+media(sm)
+		padding-top: 32px
+
+	&__block
+		padding: 0 65px
+		+media(md)
+			padding: 0 20px
+		+media(sm)
+			padding: 0px
+
+	&__title
+		font-size: 72px
+		line-height: 1.1
+		padding-bottom: 32px
+		font-weight: bold
+		+media(mdx)
+			font-size: 48px	
+		+media(sm)
+			font-size: 36px
+			padding: 0 15px
+			padding-bottom: 62px
+		&:after
+			content: '.'
+			color: #e74011
+
+	&__holder
+		counter-reset: list
+		position: relative
+		&:after
+			+media(sm)
+				position: absolute
+				z-index: -1
+				content: ' '
+				top: 1px
+				left: 25px
+				width: calc(50% - 25px - 16px)
+				height: 1px
+				background-color: #ccc
+
+	&__item
+		position: relative
+		display: flex
+		align-items: center
+		padding: 0 90px
+		+media(md)
+			padding: 0 40px
+		+media(sm)
+			padding: 0 15px
+		&:before
+			position: absolute
+			z-index: -1
+			content: ' '
+			left: 60px
+			bottom: 0px
+			width: calc(100% - 120px)
+			height: 1px
+			background-color: #ccc
+
+		&:after
+			position: absolute
+			z-index: -1
+			content: ' '
+			top: -1px
+			right: 0px
+			width: 60px
+			height: calc(100% + 1px)
+			border-radius: 0 80px 80px 0 
+			border-bottom: 1px solid #ccc
+			border-right: 1px solid #ccc
+			+media(sm)
+				border-radius: 0 25px 25px 0 
+
+		&:nth-child(even)
+			justify-content: flex-end
+			&:after
+				border-top: 1px solid #ccc
+
+			.stages__elem
+				right: -16px
+
+		&:nth-child(odd)
+
+			.stages__elem
+				left: -16px
+				+media(sm)
+					left: calc(50% - 16px)
+			&:after
+				top: -1px
+				left: 0px
+				border-right: none
+				border-top: 1px solid #ccc
+				border-left: 1px solid #ccc
+				border-radius: 80px 0 0 80px
+				+media(sm)
+					border-radius: 25px 0 0 25px
+
+		&:first-child,
+		&:last-child
+			&:after
+				height: 50% 
+				+media(sm)
+					height: calc(100% - 1px)
+
+		&:first-child
+			&:after
+				height: calc(50% - 16px)
+				top: initial
+				bottom: 0px
+				border-top: 0px
+				border-radius: 0 0px 0px 80px
+				+media(sm)
+					border-radius: 25px 0px 0px 25px
+					border-top: 1px solid #ccc
+		
+
+		&:last-child:nth-child(even)
+			&:after
+				height: calc(50% - 15px)
+				border-bottom: 0px
+				border-radius: 0 80px 0px 0
+				+media(sm)
+					height: calc(100% + 1px)
+					border-bottom: 1px solid #ccc
+					border-radius: 0 25px 25px 0px
+
+			&:before
+				width: calc(50% - 25px - 15px)
+				background-color: #fff
+
+				+media(sm)
+					background-color: #ccc
+					//width: calc(50% - 25px)
+					right: 25px
+					left: initial
+
+		&:last-child:nth-child(odd)
+			&:after
+				height: calc(50% - 15px)
+				border-bottom: 0px
+				border-radius: 80px 0px 0px 0px
+				+media(sm)
+					height: calc(100% + 1px)
+					border-radius: 25px 0 0 25px
+					border-bottom: 1px solid #ccc
+			&:before	
+				background-color: #fff
+				+media(sm)
+					left: 25px
+					bottom: 0px
+					width: calc(50% - 25px - 15px)
+					background-color: #ccc
+
+
+	&__elem
+		display: block
+		position: absolute
+		width: 32px
+		height: 32px
+		background-color: #fff
+		border: 1px solid #ccc
+		border-radius: 50%
+		+media(sm)
+			left: calc(50% - 16px)
+			bottom: -16px
+		&:before
+			position: absolute
+			content: ' '
+			top: calc(50% - 8px)
+			left: calc(50% - 8px)
+			width: 16px
+			height: 16px
+			background: #f32500
+			border-radius: 50%
+
+	&__first
+		display: none
+		position: absolute
+		width: 32px
+		height: 32px
+		background-color: #fff
+		border: 1px solid #ccc
+		border-radius: 50%
+		+media(sm)
+			display: block
+			left: calc(50% - 16px)
+			top: -16px
+		&:before
+			position: absolute
+			content: ' '
+			top: calc(50% - 8px)
+			left: calc(50% - 8px)
+			width: 16px
+			height: 16px
+			background: #f32500
+			border-radius: 50%
+
+	&__logo
+		width: 150px
+		+media(sm)
+			display: none
+		img
+			display: block
+
+	&__inner
+		width: calc(100% - 150px)
+		padding-left: 32px
+		max-width: 552px
+		+media(sm)
+			width: 100%
+			max-width: initial
+			padding-left: 0px
+
+	&__col
+		display: flex
+		margin-top: 48px
+		margin-bottom: 20px
+		+media(sm)
+			justify-content: center
+			margin-top: 32px
+			margin-bottom: 8px	
+
+	&__number
+		position: relative
+		&:after
+			position: absolute
+			top: 2px
+			left: 0px
+			counter-increment: list
+			content: counter(list) ". "
+			font-size: 36px
+			color: #e74011
+			font-weight: bold
+			+media(sm)
+				font-size: 20px
+				top: calc(50% - 12px)
+
+	&__subtitle
+		font-size: 36px
+		line-height: 1.2
+		color: #333
+		padding-left: 40px
+		font-weight: bold
+		+media(sm)
+			font-size: 20px
+			text-align: center
+			padding-left: 25px
+		
+	&__text
+		p
+			font-size: 18px
+			line-height: 1.3	
+			padding-bottom: 48px
+			font-family: Avenir
+			font-weight: 500
+			+media(sm)
+				font-size: 14px
+				text-align: center
+				padding-bottom: 32px	
+
+	&__first,
+	&__elem
+		&.active
+			animation: stagesAnime 1.5s ease-in-out 0.2s

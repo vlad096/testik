@@ -1,0 +1,79 @@
+@import 'responsive'
+
+.services
+	position: relative
+	padding-bottom: 114px
+	+media(mdx)
+		padding-bottom: 55px
+	+media(sm)
+		padding-bottom: 45px
+	&--inner
+		padding-top: 100px
+		+media(sm)
+			padding-top: 60px
+		.services__wrap
+			padding: 0 50px
+			+media(lgs)
+				padding: 0 20px
+			+media(sm)
+				padding: 0px
+	&__col
+		position: relative
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		&--block
+			width: 480px
+			+media(lgxs)
+				width: 100%
+
+		&--info
+			width: calc(100% - 480px)
+			+media(lgxs)
+				width: 100%
+
+	&__title
+		font-size: 24px
+		line-height: 1.25
+		color: #292929
+		border-bottom: 1px solid #a3a3a3
+		padding-bottom: 8px
+		font-weight: bold
+		+media(sm)
+			font-size: 18px
+
+	&__text
+		padding-top: 30px
+		+media(sm)
+			padding-top: 25px
+		p
+			font-size: 36px
+			line-height: 1.2
+			color: #292929
+			font-weight: bold
+			+media(lgxs)
+				font-size: 30px
+			+media(sm)
+				font-size: 20px
+
+	&__desc
+		max-width: 475px
+		padding-top: 36px
+		margin-left: auto
+		+media(lgxs)
+			margin-left: 0px
+			max-width: initial
+		+media(sm)
+			padding-top: 25px
+			padding-right: 0px
+		p
+			font-size: 18px
+			line-height: 1.35
+			color: #292929
+			font-family: Avenir
+			font-weight: 500
+			+media(sm)
+				font-size: 14px

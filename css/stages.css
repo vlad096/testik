@@ -1,0 +1,374 @@
+.stages {
+	padding-top: 90px;
+	margin-bottom: 94px;
+}
+
+.stages__block {
+	padding: 0 65px;
+}
+
+.stages__title {
+	font-size: 72px;
+	line-height: 1.1;
+	padding-bottom: 32px;
+	font-weight: bold;
+}
+
+.stages__title:after {
+	content: '.';
+	color: #e74011;
+}
+
+.stages__holder {
+	counter-reset: list;
+	position: relative;
+}
+
+.stages__item {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0 90px;
+}
+
+.stages__item:before {
+	position: absolute;
+	z-index: -1;
+	content: ' ';
+	left: 60px;
+	bottom: 0px;
+	width: calc(100% - 120px);
+	height: 1px;
+	background-color: #ccc;
+}
+
+.stages__item:after {
+	position: absolute;
+	z-index: -1;
+	content: ' ';
+	top: -1px;
+	right: 0px;
+	width: 60px;
+	height: calc(100% + 1px);
+	border-radius: 0 80px 80px 0;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.stages__item:nth-child(even) {
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.stages__item:nth-child(even):after {
+	border-top: 1px solid #ccc;
+}
+
+.stages__item:nth-child(even) .stages__elem {
+	right: -16px;
+}
+
+.stages__item:nth-child(odd) .stages__elem {
+	left: -16px;
+}
+
+.stages__item:nth-child(odd):after {
+	top: -1px;
+	left: 0px;
+	border-right: none;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-radius: 80px 0 0 80px;
+}
+
+.stages__item:first-child:after,
+.stages__item:last-child:after {
+	height: 50%;
+}
+
+.stages__item:first-child:after {
+	height: calc(50% - 16px);
+	top: initial;
+	bottom: 0px;
+	border-top: 0px;
+	border-radius: 0 0px 0px 80px;
+}
+
+.stages__item:last-child:nth-child(even):after {
+	height: calc(50% - 15px);
+	border-bottom: 0px;
+	border-radius: 0 80px 0px 0;
+}
+
+.stages__item:last-child:nth-child(even):before {
+	width: calc(50% - 25px - 15px);
+	background-color: #fff;
+}
+
+.stages__item:last-child:nth-child(odd):after {
+	height: calc(50% - 15px);
+	border-bottom: 0px;
+	border-radius: 80px 0px 0px 0px;
+}
+
+.stages__item:last-child:nth-child(odd):before {
+	background-color: #fff;
+}
+
+.stages__elem {
+	display: block;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+
+.stages__elem:before {
+	position: absolute;
+	content: ' ';
+	top: calc(50% - 8px);
+	left: calc(50% - 8px);
+	width: 16px;
+	height: 16px;
+	background: #f32500;
+	border-radius: 50%;
+}
+
+.stages__first {
+	display: none;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+
+.stages__first:before {
+	position: absolute;
+	content: ' ';
+	top: calc(50% - 8px);
+	left: calc(50% - 8px);
+	width: 16px;
+	height: 16px;
+	background: #f32500;
+	border-radius: 50%;
+}
+
+.stages__logo {
+	width: 150px;
+}
+
+.stages__logo img {
+	display: block;
+}
+
+.stages__inner {
+	width: calc(100% - 150px);
+	padding-left: 32px;
+	max-width: 552px;
+}
+
+.stages__col {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 48px;
+	margin-bottom: 20px;
+}
+
+.stages__number {
+	position: relative;
+}
+
+.stages__number:after {
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	counter-increment: list;
+	content: counter(list) ". ";
+	font-size: 36px;
+	color: #e74011;
+	font-weight: bold;
+}
+
+.stages__subtitle {
+	font-size: 36px;
+	line-height: 1.2;
+	color: #333;
+	padding-left: 40px;
+	font-weight: bold;
+}
+
+.stages__text p {
+	font-size: 18px;
+	line-height: 1.3;
+	padding-bottom: 48px;
+	font-family: Avenir;
+	font-weight: 500;
+}
+
+.stages__first.active,
+.stages__elem.active {
+	-webkit-animation: stagesAnime 1.5s ease-in-out 0.2s;
+	animation: stagesAnime 1.5s ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 1050px) {
+
+.stages__title {
+	font-size: 48px;
+}
+
+}
+
+@media screen and (max-width: 960px) {
+
+.stages__block {
+	padding: 0 20px;
+}
+
+.stages__item {
+	padding: 0 40px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.stages {
+	padding-top: 32px;
+}
+
+.stages__block {
+	padding: 0px;
+}
+
+.stages__title {
+	font-size: 36px;
+	padding: 0 15px;
+	padding-bottom: 62px;
+}
+
+.stages__holder:after {
+	position: absolute;
+	z-index: -1;
+	content: ' ';
+	top: 1px;
+	left: 25px;
+	width: calc(50% - 25px - 16px);
+	height: 1px;
+	background-color: #ccc;
+}
+
+.stages__item {
+	padding: 0 15px;
+}
+
+.stages__item:after {
+	border-radius: 0 25px 25px 0;
+}
+
+.stages__item:nth-child(odd) .stages__elem {
+	left: calc(50% - 16px);
+}
+
+.stages__item:nth-child(odd):after {
+	border-radius: 25px 0 0 25px;
+}
+
+.stages__item:first-child:after,
+.stages__item:last-child:after {
+	height: calc(100% - 1px);
+}
+
+.stages__item:first-child:after {
+	border-radius: 25px 0px 0px 25px;
+	border-top: 1px solid #ccc;
+}
+
+.stages__item:last-child:nth-child(even):after {
+	height: calc(100% + 1px);
+	border-bottom: 1px solid #ccc;
+	border-radius: 0 25px 25px 0px;
+}
+
+.stages__item:last-child:nth-child(even):before {
+	background-color: #ccc;
+	right: 25px;
+	left: initial;
+}
+
+.stages__item:last-child:nth-child(odd):after {
+	height: calc(100% + 1px);
+	border-radius: 25px 0 0 25px;
+	border-bottom: 1px solid #ccc;
+}
+
+.stages__item:last-child:nth-child(odd):before {
+	left: 25px;
+	bottom: 0px;
+	width: calc(50% - 25px - 15px);
+	background-color: #ccc;
+}
+
+.stages__elem {
+	left: calc(50% - 16px);
+	bottom: -16px;
+}
+
+.stages__first {
+	display: block;
+	left: calc(50% - 16px);
+	top: -16px;
+}
+
+.stages__logo {
+	display: none;
+}
+
+.stages__inner {
+	width: 100%;
+	max-width: initial;
+	padding-left: 0px;
+}
+
+.stages__col {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-top: 32px;
+	margin-bottom: 8px;
+}
+
+.stages__number:after {
+	font-size: 20px;
+	top: calc(50% - 12px);
+}
+
+.stages__subtitle {
+	font-size: 20px;
+	text-align: center;
+	padding-left: 25px;
+}
+
+.stages__text p {
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+}
+

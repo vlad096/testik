@@ -1,0 +1,92 @@
+@import 'responsive'
+
+.page-project
+	position: relative
+	padding-top: 100px
+	margin-bottom: 80px
+	&__col
+		position: relative
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -20px
+
+	&__item
+		width: calc(100% / 2 - 40px)
+		margin: 0 20px
+
+	&__date
+		font-size: 24px
+		line-height: 1.2
+		color: #a3a3a3
+		padding-bottom: 12px
+		font-weight: bold
+
+	&__title
+		font-size: 72px	
+		line-height: 1.1
+		padding-bottom: 30px
+		font-weight: bold
+		span
+			display: inline-block
+			color: #e74011
+
+	&__desc
+		p
+			font-size: 18px
+			line-height: 1.35
+			color: #292929
+			font-family: Avenir
+			font-weight: 500
+
+	&__item
+		h5
+			font-size: 24px
+			line-height: 1.2
+			color: #292929
+			padding-bottom: 16px
+
+		ul
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			padding-bottom: 14px
+			li
+				position: relative
+				font-size: 16px
+				color: #292929
+				padding-left: 20px
+				margin-bottom: 14px
+				font-family: Avenir
+				font-weight: 800
+				&:after
+					position: absolute
+					content: '+'
+					left: 0px
+					top: 50%
+					transform: translateY(-50%)
+				&:not(:last-child)
+					margin-right: 30px
+
+		p
+			font-size: 18px
+			line-height: 1.2
+			font-family: Avenir
+			font-weight: 500
+
+	&__aside
+		position: absolute
+		writing-mode: vertical-rl
+		transform: rotate(-180deg)
+		bottom: 70px
+		right: -81px
+		font-size: 15px
+		line-height: 1.2
+		color: #292929
+		font-family: Roboto
+		font-weight: bold
+		+media(lg)
+			right: -40px
+		+media(lgm)
+			display: none
